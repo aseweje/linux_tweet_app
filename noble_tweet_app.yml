@@ -3,6 +3,6 @@
 
    tasks:
     - name: Pulling docker image
-      shell: docker pull nexus.usgovvirginia.cloudapp.usgovcloudapi.net:5000/web-stress-test
+      shell: docker pull nexus.usgovvirginia.cloudapp.usgovcloudapi.net:5000/noble-tweet-app
     - name: Creating a docker container
-      shell: docker service create --name "test" -p 8080:8080 nexus.usgovvirginia.cloudapp.usgovcloudapi.net:5000/web-stress-test
+      shell: docker service create --name "test" -p 8080:8080 nexus.usgovvirginia.cloudapp.usgovcloudapi.net:5000/noble-tweet-app
